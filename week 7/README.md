@@ -99,7 +99,7 @@ III. Kết luận:
 
 IV. Câu hỏi: 
 1. Tại sao sigmoid^2 lớn lại gây ra Underfitting?
-
+- Sự "nhạy cảm" của mô hình.
 
 
 
@@ -133,3 +133,24 @@ I.1. Support Vector Machine (SVM):
 
 I.2. Conclusion: 
 - Increase 'confident' of the model.
+
+
+(?) Loss của logistic regression & SVM có gì khác nhau?
+(?) Gradient Descent?
+(?) What happen if C is too large?
+- SVM suffers overfitting will not show any different from Logistic model.
+(?) Ý tưởng của Kernel & SVM?
+- Tự động hóa khâu chọn high degree features.
+
+(?) Trong SVM thì khi nào dự đoán 1, khi nào dự đoán 0.
+(?) Mô tả pipeline của kernel & SVM?
+(?) Lý do sử dụng feature scaling?
+- Tốc độ training nhanh hơn.
+
+(?) Tại sao không sử dụng features scaling gây ra các vấn đề trong Gradient Descent?
+- Do dùng chung learning rate. Bản chất, khi training cần đảm bảo mô hình không bị phân kỳ. Tức, cần đảm bảo các features có khoảng giá trị nhỏ nhất hội tụ (Thì các features có khoảng giá trị to hơn chắc chắn sẽ hội tụ). Tuy nhiên, khi khoảng giá trị của các fatures quá chênh lệnh, việc đảm bảo hội tụ cho các features có khoảng nhỏ sẽ khiến các trọng số ứng với các features có khoảng lớn không hội tụ hoặc mất cực kỳ lâu để hội tụ. Tóm lại, thời gian training mô hình cực kỳ lâu nếu các khoảng của features là chênh lệnh nhau nhiều hoặc thậm chí là không thể hội tụ.
+
+(?) 
+- n>= m: 
+VD: Xử lý ảnh.
+ - Sử dụng logistic regression without high degree,...

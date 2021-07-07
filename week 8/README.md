@@ -1,3 +1,7 @@
+# Hệ thống hóa: 
+- Selection mà hàm mục tiêu (Objective function) là cost: Mối quan hệ giữa J & iters (K): K-means, Gradient Descent, ...
+- Phản bác Elbow function: J lớn hay nhỏ phụ thuộc vào random init chứ không phụ thuộc vào số lượng K.
+
 # 22/06/2021: 
 I. Tasks: 
 - Programming assignment.
@@ -8,14 +12,16 @@ II. Notes:
 - K-means objective function: Cost of examples and cluster centroids.
 - Reconstructed images means compressed images after running K-means.
 - Khi sử dụng K-means để nén ảnh, mỗi bức ảnh là toàn bộ data set.
+- PCA trong images compression có nghĩa là giảm số Pixels. 
 
 III. Q&A: 
 1. K-mean dừng khi nào?
+- Assignment sẽ đến lúc không đổi.
 - Khi vòng lặp sau cho kết quả centroids giống vòng lặp trước.
 2. Tại sao lại nên random vào training examples?
 - Có thể sẽ trúng các điểm trung tâm.
 - Tránh được các điểm quá kỳ dị. VD: Các quá xa điểm ban đầu. Hoặc nếu có làm restriction thì cũng mất thời gian hơn.
-3. Eigenvectors là gì?
+3. Eigenvectors là gì? (PC trong cụm PCA là cái gì?)
 - U: Xác định PC (Thành phần chủ chốt). VD: Đường thẳng kẻ qua dữ liệu 2 chiều.
 Bonus: Giá trị của S được sử dụng để quyết định chọn K bao nhiêu là hợp lý (Vẫn chọn từ đỉnh xuống đáy), giá trị thực sự của PC nằm ở U.
 4. PC dùng để làm gì?

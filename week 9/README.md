@@ -1,3 +1,67 @@
+# 16/07/2021: 
+## I. Tasks: 
+- Collaborative Filtering.
+
+## II. Notes: 
+- Collaborative Filtering: 
+ - An approach to build a recommender system.
+ - Feature learning: Learn to choose what features to use.
+
+
+
+
+
+# 14/07/2021: 
+## I. Tasks: 
+- Recommend Systems: Problem Formulation.
+- Recommend Systems: Content-Based Recommendations.
+
+## II. Notes: 
+- Movie recommend system: Predict missing rating value.
+- Formula: https://www.coursera.org/learn/machine-learning/lecture/uG59z/content-based-recommendations
+- Learn a function to apply to ALL users.
+- Khó để dán nhãn cho các bộ phim theo thể loại một cách rõ ràng theo tỉ lệ.
+- Đối với mỗi người dùng thì bài toán tương tự Linear Regression.
+
+## III. Questions: 
+1. 2 cách tính cost có tương đương nhau hay không? VD: 1 model cho 1000 người & 1000 models cho 1000 người.
+Có.
+
+
+
+
+
+
+# 12/07/2021:
+## I. Tasks: 
+- Anomaly Detection using the Multivariate Gaussian Distribution.
+
+## II. Notes:
+- Bản chất, 3D hay 2D chỉ là cách thể hiện bằng hình vẽ (Visualization), về mặt công thức có thể chuyển hóa giữa 2 dạng Gaussian Distributions (Original model & Multivariate) với điều kiện của Sigma chỉ có đường chéo chính là có giá trị khác 0, các giá trị đó là phương sai trong công thức Original.
+- Kết luận: Original model là trường hợp đặc biệt của Multiveriate Gaussian Distribution  (Với Sigma đặc biệt).
+- Original model được dùng nhiều hơn. Tuy nhiên, trong trường hợp có nhiều features, sử dụng Multivariate Gaussian giúp tiết kiệm thời gian ngồi nghĩ features mới.
+
+- Trong Multivariate Gaussian, nếu sigma suy biến (singular) có nghĩa là không thỏa mãn ít nhất một trong hai điều kiện: m > n & sigma không độc lập tuyến tính (linear dependent).
+
+
+
+
+
+# 07/07/2021:
+## I. Tasks: 
+- Anomaly detection: Multivariate Gaussian Distribution.
+
+## II. Notes: 
+- Nếu chỉ dùng Univariate Gaussian distribution, dự đoán lỗi có xác suất thấp.
+- Multivariate Gaussian (Normal) distribution.
+- Đối với Univariate Gaussian distribution, p được xác định bởi mean & standard deviation (Độ lệch chuẩn).
+- Đối với Multivariate Gaussian distribution, p được xác định bởi mean & sigma.
+
+
+
+
+
+
 # 01/07/2021: 
 ## I. Tasks: 
 - Building an Anomaly Detection System.
